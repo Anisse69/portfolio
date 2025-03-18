@@ -60,9 +60,40 @@
             </div>
 
         </section>
-        <aside>
-            <h1>Contact</h1>
-        </aside>
+        <section class="formulaire">
+            <div>
+                <h1>Formulaire de contact</h1>
+                <form action="envoie_message.php" method="post">
+                    <div>
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <div>
+                        <label for="prenom">Prenom :</label>
+                        <input type="text" id="prenom"name="prenom" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email : </label>
+                        <input type="email" id="email" name="email"required>
+                    </div>
+
+                    <div>
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <div id="Tcontact">
+                <h1>Contact</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, mollitia. Quod, veniam. Magnam et odit delectus vitae. Possimus nihil fugit magnam tenetur, illo laudantium pariatur. Corporis aperiam inventore assumenda doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nisi assumenda expedita provident ab laborum labore fugiat iste doloribus! Dicta, magnam ullam. Excepturi mollitia, similique animi reiciendis porro repudiandae vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repudiandae! Sed dicta ad quod exercitationem reiciendis atque possimus rerum veritatis dolores reprehenderit aut labore necessitatibus fuga modi quam, asperiores voluptatem.</p>
+            </div>
+        </section>
     </main>
     
 </body>

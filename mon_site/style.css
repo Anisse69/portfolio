@@ -1,5 +1,10 @@
 /*Appareil type pc ou tv */
+html{
+    cursor: url('icons8-pointeur-3d.svg'), auto;
+}
+
 body {
+    cursor: url('icons8-pointeur-3d.svg'), auto;
     padding: 1%;
     margin: 1%;
     background-color: rgb(96, 96, 113);
@@ -82,6 +87,37 @@ main{
 .veille img {
     /*padding-left: 35%;*/
     width: 100%;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+    padding: 5%;
+    font-size: 200%;
+    text-align: center;
+}
+
+
+form {
+
+    font-size: 70%;
+    flex-direction: row;
+    text-align: right;
+  
+}
+
+form div {
+    padding: 1%;
+}
+
+#Tcontact {
+    width: 40%;
+    text-align: right;
+}
+
+#Tcontact p {
+    font-size: 60%;
 }
 
 
@@ -172,4 +208,41 @@ main{
         /*padding-left: 35%;*/
         width: 100%;
     }
+
+    .formulaire{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 1%;
+        font-size: 200%;
+        text-align: center;
+    }
+    
+    
+    form {
+        padding-right: 30%;
+        font-size: 70%;
+        flex-direction: row;
+        text-align: right;
+      
+    }
+    
+    form div {
+        padding: 1%;
+    }
+    
+    #Tcontact {
+        width: 60%;
+        
+    }
+
+    #Tcontact h1 {
+        text-align: center;
+    }
+    
+    #Tcontact p {
+        font-size: 60%;
+        text-align: center;
+    }
+    
 }
