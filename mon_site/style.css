@@ -1,4 +1,4 @@
-
+/*Appareil type pc ou tv */
 body {
     padding: 1%;
     margin: 1%;
@@ -43,33 +43,133 @@ main{
     text-align: center;
 }
 
+
+
 .box{
     width: 20%;
     padding: 1%;
     margin: 5%;
     border-block: solid ;
 }
-.box h2{
 
-}
 
 .BBox {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .veille{
+    color: aliceblue;
+    background-color: #333;
     display: flex;
+    justify-content: space-around;
     padding: 5%;
+    flex-wrap: wrap;
+
 }
+
 #TextVeille {
     width: 35%;
 }
+
+
 .veille h2{
-    margin: 1%;
-    background-color: blueviolet;
-    font-size: 7rem;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    font-size: 500%;
     font-family:'Times New Roman', Times, serif;
 }
 .veille img {
-    padding-left: 35%;
+    /*padding-left: 35%;*/
+    width: 100%;
+}
+
+
+/*Appareil type smartphone*/
+
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 1%;
+        margin: 1%;
+        background-color: rgb(96, 96, 113);
+    }
+    
+    nav {
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        margin: 0 10px;
+        display: inline-block;
+    }
+    nav a:hover {
+        background-color: #575757;
+    }
+    
+    
+    header {
+        background-color: rgb(171, 179, 179);
+        text-align: center;
+    }
+    .titrePrincipal {
+        padding: 20px;
+        border-bottom: solid;
+    }
+    header h1{
+        background-color: rgb(255, 255, 255);
+        font-size: 58px;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-bottom: solid;
+    }
+    
+    main{
+        background-color: azure;
+        text-align: center;
+    }
+    
+    
+    
+    .box{
+        width: 20%;
+        padding: 1%;
+        margin: 5%;
+        border-block: solid ;
+    }
+    
+    
+    .BBox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .veille{
+        color: aliceblue;
+        background-color: #333;
+        display: flex;
+        justify-content: space-around;
+        padding: 5%;
+        flex-wrap: wrap;
+    
+    }
+    
+    #TextVeille {
+        width: 70%;
+    }
+    
+    
+    .veille h2{
+        color: aliceblue;
+        background-color: rgb(0, 0, 0);
+        font-size: 500%;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .veille img {
+        /*padding-left: 35%;*/
+        width: 100%;
+    }
 }
