@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <nav>
-      <a href="#home">Accueil</a>
-      <a href="#about">APs</a>
-      <a href="#services">Veille</a>
-      <a href="#contact">Contact</a>
+    <nav id="Accueil">
+      <a href="#Accueil">Accueil</a>
+      <a href="#APs">APs</a>
+      <a href="#Veille">Veille</a>
+      <a href="#formulaire">Contact</a>
     </nav>
 
     <header>
@@ -28,7 +28,7 @@
     </header>
 
     <main>
-      <section class="BBox">
+      <section id="APs" class="BBox">
         <div class="box">
           <h2>AP 1</h2>
           <p>
@@ -58,7 +58,7 @@
         </div>
       </section>
 
-      <section class="veille">
+      <section id="Veille" class="veille">
         <div id="TextVeille">
           <h2>Veille</h2>
           <p>
@@ -72,25 +72,23 @@
           <img src="baie.webp" alt="Image d'une baie informatique" />
         </div>
       </section>
-      <section class="formulaire">
+      <section id="b1" class="formulaire" >
         <div class="bloc">
           <h1>Formulaire de contact</h1>
           <form action="envoie_message.php" method="post">
             <div class="NomPrenom">
-                <input type="text" id="nom" name="nom" value="Nom" onclick="effacer('Nom',this.id);" required />
-                <input type="text" id="prenom" name="prenom" value="Prénom" onclick="effacer('Prénom',this.id);" required />
+                <input type="text" id="nom" name="nom"  placeholder="Nom" required />
+                <input type="text" id="prenom" name="prenom"  placeholder="Prénom" required />
             </div>
-              <input type="email" id="email" name="email" value="Adresse mail" onclick="effacer('Adresse mail',this.id);" required>
+              <input type="email" id="email" name="email"  placeholder="Email" required>
             <div>
               <textarea
                 id="message"
-                name="message"
+                placeholder="Votre message ici"
                 cols="50"
                 rows="10"
-                onclick="effacer('Message', this.id);"
                 required
-              >
-Message</textarea
+              ></textarea
               >
             </div>
 
@@ -99,7 +97,7 @@ Message</textarea
             </div>
           </form>
         </div>
-        <div id="Tcontact">
+        <div class="Tcontact">
           <h1>Contact</h1>
           <div class="icon">
             <img src="téléchargé.png" alt="icon instagram" />

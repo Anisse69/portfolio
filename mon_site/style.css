@@ -1,322 +1,309 @@
 /*Appareil type pc ou tv */
 
 body {
-    cursor: url('icons8-pointeur-3d.svg'), auto;
-    padding: 1%;
-    margin: 1%;
-    background-color: rgb(96, 96, 113);
+  cursor: url("icons8-pointeur-3d.svg"), auto;
+  padding: 1%;
+  margin: 1%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  background-color: rgb(96, 96, 113);
 }
 
 nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #575757;
+}
+
+header {
+  background-color: rgb(171, 179, 179);
+  text-align: center;
+}
+.titrePrincipal {
+  padding: 20px;
+  border-bottom: solid;
+}
+header h1 {
+  background-color: rgb(255, 255, 255);
+  font-size: 58px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-bottom: solid;
+}
+
+main {
+  background-color: azure;
+  text-align: center;
+}
+
+.box {
+  background-color: whitesmoke;
+  width: 20%;
+  padding: 1%;
+  margin: 5%;
+  border: solid;
+  border-radius: 10%;
+}
+
+.box h2 {
+  background-color: #aaa6a6;
+  border-radius: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.BBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.veille {
+  color: aliceblue;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 5%;
+  flex-wrap: wrap;
+}
+
+#TextVeille {
+  width: 35%;
+}
+
+.veille h2 {
+  color: aliceblue;
+  background-color: rgb(0, 0, 0);
+  font-size: 500%;
+  font-family: "Times New Roman", Times, serif;
+}
+.veille img {
+  /*padding-left: 35%;*/
+  border-radius: 10%;
+  width: 100%;
+}
+
+.nformulaire {
+    background-color: #575757;
+}
+
+.formulaire {
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+  padding: 5%;
+  font-size: 200%;
+}
+
+.bloc {
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding: 2%;
+}
+
+form {
+  font-size: 70%;
+  flex-direction: row;
+  text-align: center;
+}
+
+.NomPrenom {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  font-size: 1rem;
+}
+textarea {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2%;
+  padding: 1%;
+  max-width: 80%;
+}
+
+#email {
+  width: 70%;
+}
+
+form input {
+  padding: 1%;
+  margin: 1.5%;
+}
+
+.Tcontact {
+  width: 40%;
+  height: 500px;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10%;
+  background-color: rgb(255, 255, 255);
+}
+
+.Tcontact p {
+  font-size: 60%;
+  margin-left: 3%;
+}
+
+.Tcontact img {
+  height: 10%;
+  width: 10%;
+}
+
+.icon {
+  display: flex;
+  padding: 2%;
+  padding-left: 10%;
+  flex-direction: row;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding-top: 1%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer p {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-top: 5px solid white;
+}
+
+/*Appareil type smartphone*/
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 1%;
+    margin: 1%;
+    background-color: rgb(96, 96, 113);
+  }
+
+  nav {
     background-color: #333;
     padding: 10px;
     text-align: center;
-}
-nav a {
+  }
+  nav a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
     margin: 0 10px;
     display: inline-block;
-}
-nav a:hover {
+  }
+  nav a:hover {
     background-color: #575757;
-}
+  }
 
-
-header {
+  header {
     background-color: rgb(171, 179, 179);
     text-align: center;
-}
-.titrePrincipal {
+  }
+  .titrePrincipal {
     padding: 20px;
     border-bottom: solid;
-}
-header h1{
+  }
+  header h1 {
     background-color: rgb(255, 255, 255);
     font-size: 58px;
     margin-left: 20%;
     margin-right: 20%;
     border-bottom: solid;
-}
+  }
 
-main{
+  main {
     background-color: azure;
     text-align: center;
-}
+  }
 
-
-
-.box{
-    background-color: whitesmoke;
-    width: 20%;
+  .box {
+    width: 50%;
     padding: 1%;
     margin: 5%;
-    border: solid ;
-    border-radius: 10%;
-}
+    border-block: solid;
+  }
 
-
-.box h2 {
+  .box h2 {
     background-color: #aaa6a6;
     border-radius: 10%;
     margin-left: 20%;
     margin-right: 20%;
-}
+  }
 
-
-.BBox {
+  .BBox {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-}
+    flex-direction: column;
+    align-items: center;
+  }
 
-.veille{
+  .veille {
     color: aliceblue;
     background-color: #333;
     display: flex;
     justify-content: space-around;
     padding: 5%;
     flex-wrap: wrap;
+  }
 
-}
+  #TextVeille {
+    width: 70%;
+  }
 
-#TextVeille {
-    width: 35%;
-}
-
-
-.veille h2{
+  .veille h2 {
     color: aliceblue;
     background-color: rgb(0, 0, 0);
     font-size: 500%;
-    font-family:'Times New Roman', Times, serif;
-}
-.veille img {
+    font-family: "Times New Roman", Times, serif;
+  }
+  .veille img {
     /*padding-left: 35%;*/
-    border-radius: 10%;
     width: 100%;
-}
+  }
 
-.formulaire{
+  .formulaire {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 1%;
-    padding: 5%;
     font-size: 200%;
-}
+    text-align: center;
+  }
 
-.bloc {
-    background-color: blanchedalmond;
-    border: 2px solid black;
-    border-radius: 10%;
-    padding: 2%;
-}
-
-form {
+  form {
+    padding: 5%;
     font-size: 70%;
     flex-direction: row;
+    text-align: right;
+  }
+
+  form div {
+    padding: 1%;
+  }
+
+  #Tcontact {
+    width: 60%;
+  }
+
+  #Tcontact h1 {
     text-align: center;
-  
-}
+  }
 
-.NomPrenom {
-    display: flex;
-    justify-content: center;
-}
-
-input {
-    font-size: 1rem;
-}
-textarea {
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 2%;
-    padding: 1%;
-    max-width: 80%;
-}
-
-#email {
-    width: 70%;
-}
-
-form input {
-    padding: 1%;
-    margin: 1.5%;
-}
-
-#Tcontact {
-    width: 40%;
-    height: 500px;
-    align-items: center;
-    border : 2px solid black;
-    border-radius: 10%;
-    background-color: rgb(255, 255, 255);
-}
-
-#Tcontact p {
+  #Tcontact p {
     font-size: 60%;
-    margin-left: 3%;
-}
-
-#Tcontact img {
-    height: 10%;
-    width: 10%;
-}
-
-.icon {
-    display: flex;
-    padding: 2%;
-    padding-left: 10%;
-    flex-direction: row;
-}
-
-footer {
-    color: white;
-    background-color: black;
-    padding-top: 1%;
     text-align: center;
-    font-size: 1.2rem;
-}
-
-footer p {
-    padding-top: 2%;
-    border-top: 5px solid white;
-}
-
-
-
-/*Appareil type smartphone*/
-
-@media screen and (max-width: 1200px) {
-    body {
-        padding: 1%;
-        margin: 1%;
-        background-color: rgb(96, 96, 113);
-    }
-    
-    nav {
-        background-color: #333;
-        padding: 10px;
-        text-align: center;
-    }
-    nav a {
-        color: white;
-        padding: 14px 20px;
-        text-decoration: none;
-        margin: 0 10px;
-        display: inline-block;
-    }
-    nav a:hover {
-        background-color: #575757;
-    }
-    
-    
-    header {
-        background-color: rgb(171, 179, 179);
-        text-align: center;
-    }
-    .titrePrincipal {
-        padding: 20px;
-        border-bottom: solid;
-    }
-    header h1{
-        background-color: rgb(255, 255, 255);
-        font-size: 58px;
-        margin-left: 20%;
-        margin-right: 20%;
-        border-bottom: solid;
-    }
-    
-    main{
-        background-color: azure;
-        text-align: center;
-    }
-    
-    
-    
-    .box{
-        width: 50%;
-        padding: 1%;
-        margin: 5%;
-        border-block: solid ;
-    }
-
-    .box h2 {
-        background-color: #aaa6a6;
-        border-radius: 10%;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    
-    
-    .BBox {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items : center;
-    }
-    
-    .veille{
-        color: aliceblue;
-        background-color: #333;
-        display: flex;
-        justify-content: space-around;
-        padding: 5%;
-        flex-wrap: wrap;
-    
-    }
-    
-    #TextVeille {
-        width: 70%;
-    }
-    
-    
-    .veille h2{
-        color: aliceblue;
-        background-color: rgb(0, 0, 0);
-        font-size: 500%;
-        font-family:'Times New Roman', Times, serif;
-    }
-    .veille img {
-        /*padding-left: 35%;*/
-        width: 100%;
-    }
-
-    .formulaire{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: 1%;
-        font-size: 200%;
-        text-align: center;
-    }
-    
-    
-    form {
-        padding : 5%;
-        font-size: 70%;
-        flex-direction: row;
-        text-align: right;
-      
-    }
-    
-    form div {
-        padding: 1%;
-    }
-    
-    #Tcontact {
-        width: 60%;
-        
-    }
-
-    #Tcontact h1 {
-        text-align: center;
-    }
-    
-    #Tcontact p {
-        font-size: 60%;
-        text-align: center;
-    }
-    
+  }
 }
