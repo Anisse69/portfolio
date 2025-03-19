@@ -1,7 +1,4 @@
 /*Appareil type pc ou tv */
-html{
-    cursor: url('icons8-pointeur-3d.svg'), auto;
-}
 
 body {
     cursor: url('icons8-pointeur-3d.svg'), auto;
@@ -51,10 +48,20 @@ main{
 
 
 .box{
+    background-color: whitesmoke;
     width: 20%;
     padding: 1%;
     margin: 5%;
-    border-block: solid ;
+    border: solid ;
+    border-radius: 10%;
+}
+
+
+.box h2 {
+    background-color: #aaa6a6;
+    border-radius: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
@@ -86,6 +93,7 @@ main{
 }
 .veille img {
     /*padding-left: 35%;*/
+    border-radius: 10%;
     width: 100%;
 }
 
@@ -95,30 +103,86 @@ main{
     margin: 1%;
     padding: 5%;
     font-size: 200%;
-    text-align: center;
 }
 
+.bloc {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 2%;
+}
 
 form {
-
     font-size: 70%;
     flex-direction: row;
-    text-align: right;
+    text-align: center;
   
 }
 
-form div {
+.NomPrenom {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    font-size: 1rem;
+}
+textarea {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
     padding: 1%;
+    max-width: 80%;
+}
+
+#email {
+    width: 70%;
+}
+
+form input {
+    padding: 1%;
+    margin: 1.5%;
 }
 
 #Tcontact {
     width: 40%;
-    text-align: right;
+    height: 500px;
+    align-items: center;
+    border : 2px solid black;
+    border-radius: 10%;
+    background-color: rgb(255, 255, 255);
 }
 
 #Tcontact p {
     font-size: 60%;
+    margin-left: 3%;
 }
+
+#Tcontact img {
+    height: 10%;
+    width: 10%;
+}
+
+.icon {
+    display: flex;
+    padding: 2%;
+    padding-left: 10%;
+    flex-direction: row;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding-top: 1%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer p {
+    padding-top: 2%;
+    border-top: 5px solid white;
+}
+
 
 
 /*Appareil type smartphone*/
@@ -171,16 +235,26 @@ form div {
     
     
     .box{
-        width: 20%;
+        width: 50%;
         padding: 1%;
         margin: 5%;
         border-block: solid ;
     }
+
+    .box h2 {
+        background-color: #aaa6a6;
+        border-radius: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
     
     
     .BBox {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items : center;
     }
     
     .veille{
@@ -220,7 +294,7 @@ form div {
     
     
     form {
-        padding-right: 30%;
+        padding : 5%;
         font-size: 70%;
         flex-direction: row;
         text-align: right;
