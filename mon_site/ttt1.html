@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
+    <!--Barre de navigation-->
     <nav id="Accueil">
       <a href="#Accueil">Accueil</a>
       <a href="#APs">APs</a>
       <a href="#Veille">Veille</a>
       <a href="#formulaire">Contact</a>
     </nav>
-
+<!--En tête avec titre-->
     <header>
       <div class="titrePrincipal">
         <h1><strong>Portfolio</strong></h1>
@@ -24,7 +25,9 @@
           sequi at libero! Aliquid porro fuga quidem sapiente, nihil rerum
           consequatur. Reiciendis.
         </p>
+        <a href="Copie de CV-.pdf">Téléchargé mon cv !</a>
       </div>
+
     </header>
 
     <main>
@@ -72,24 +75,24 @@
           <img src="baie.webp" alt="Image d'une baie informatique" />
         </div>
       </section>
-      <section id="b1" class="formulaire" >
+      <section class="formulaire">
         <div class="bloc">
           <h1>Formulaire de contact</h1>
           <form action="envoie_message.php" method="post">
             <div class="NomPrenom">
-                <input type="text" id="nom" name="nom"  placeholder="Nom" required />
-                <input type="text" id="prenom" name="prenom"  placeholder="Prénom" required />
+              <input type="text" name="nom" placeholder="Nom" required />
+              <input type="text" name="prenom" placeholder="Prénom" required />
             </div>
-              <input type="email" id="email" name="email"  placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email" required />
             <div>
               <textarea
-                id="message"
+                id="b1"
+                class="email"
                 placeholder="Votre message ici"
                 cols="50"
                 rows="10"
                 required
-              ></textarea
-              >
+              ></textarea>
             </div>
 
             <div>
@@ -115,7 +118,7 @@
       </section>
     </main>
     <footer>
-        <p>copyright </p>
+      <p>copyright</p>
     </footer>
 
     <script src="scripts.js"></script>

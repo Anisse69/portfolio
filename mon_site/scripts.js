@@ -10,9 +10,22 @@ function effacer(value_defaut, id) {
 }
 
 function changeColor() {
-    b1.classList.toggle('nformulaire');
+  b1.classList.toggle("click");
 }
 
+// Fonction pour générer les confettis
+function throwConfetti() {
+  confetti({
+    particleCount: 100, // Nombre de confettis
+    spread: 70, // Angle de dispersion
+    origin: { y: 0.6 }, // Position de départ des confettis
+  });
+}
 
-const b1 = document.getElementById("b1")
+// Ajouter l'événement de clic sur le bouton
+document
+  .getElementById("celebrateBtn")
+  .addEventListener("click", throwConfetti);
+
+const b1 = document.getElementById("b1");
 b1.addEventListener("click", changeColor);

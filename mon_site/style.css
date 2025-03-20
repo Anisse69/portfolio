@@ -41,6 +41,22 @@ header h1 {
   border-bottom: solid;
 }
 
+header p {
+    padding-bottom: 3%;
+}
+
+header a {
+    text-decoration: none;
+    border-radius: 5%;
+    font-size: 200%;
+    margin-top: 3%;
+    padding: 1%;
+    margin: 0%;
+    color: white;
+    background-color: black;
+    border : 2px solid white;
+}
+
 main {
   background-color: azure;
   text-align: center;
@@ -92,20 +108,16 @@ main {
   width: 100%;
 }
 
-.nformulaire {
-    background-color: #575757;
-}
-
 .formulaire {
   display: flex;
   justify-content: space-around;
-  margin: 1%;
+  margin: 0%;
   padding: 5%;
   font-size: 200%;
 }
 
 .bloc {
-  background-color: blanchedalmond;
+  background-color:deepskyblue;
   border: 2px solid black;
   border-radius: 10%;
   padding: 2%;
@@ -133,13 +145,18 @@ textarea {
   max-width: 80%;
 }
 
-#email {
+.email {
   width: 70%;
 }
 
 form input {
   padding: 1%;
   margin: 1.5%;
+}
+
+form button {
+    font-size: 100% ;
+    background-color:aqua;
 }
 
 .Tcontact {
@@ -182,52 +199,14 @@ footer p {
   border-top: 5px solid white;
 }
 
+.click {
+  background-color: #d3d2e9;
+  border-color: rgb(73, 164, 249);
+}
+
 /*Appareil type smartphone*/
 
 @media screen and (max-width: 1200px) {
-  body {
-    padding: 1%;
-    margin: 1%;
-    background-color: rgb(96, 96, 113);
-  }
-
-  nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    margin: 0 10px;
-    display: inline-block;
-  }
-  nav a:hover {
-    background-color: #575757;
-  }
-
-  header {
-    background-color: rgb(171, 179, 179);
-    text-align: center;
-  }
-  .titrePrincipal {
-    padding: 20px;
-    border-bottom: solid;
-  }
-  header h1 {
-    background-color: rgb(255, 255, 255);
-    font-size: 58px;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-bottom: solid;
-  }
-
-  main {
-    background-color: azure;
-    text-align: center;
-  }
-
   .box {
     width: 50%;
     padding: 1%;
@@ -283,6 +262,28 @@ footer p {
     text-align: center;
   }
 
+  
+.formulaire {
+    display: flex;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 5%;
+    font-size: 200%;
+  }
+  
+  .bloc {
+    background-color:deepskyblue;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 2%;
+  }
+  
+  .NomPrenom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   form {
     padding: 5%;
     font-size: 70%;
@@ -294,15 +295,15 @@ footer p {
     padding: 1%;
   }
 
-  #Tcontact {
-    width: 60%;
+  .Tcontact {
+    width: 80%;
   }
 
-  #Tcontact h1 {
+  .Tcontact h1 {
     text-align: center;
   }
 
-  #Tcontact p {
+  .Tcontact p {
     font-size: 60%;
     text-align: center;
   }
