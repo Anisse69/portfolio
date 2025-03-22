@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>wow</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   </head>
   <body>
     <!--Barre de navigation-->
-    <nav id="Accueil">
+    <nav>
       <a href="#Accueil">Accueil</a>
       <a href="#APs">APs</a>
       <a href="#Veille">Veille</a>
       <a href="#formulaire">Contact</a>
     </nav>
-<!--En tête avec titre-->
-    <header>
+    <!--En tête avec titre-->
+    <header id="Accueil">
       <div class="titrePrincipal">
         <h1><strong>Portfolio</strong></h1>
 
@@ -25,10 +27,13 @@
           sequi at libero! Aliquid porro fuga quidem sapiente, nihil rerum
           consequatur. Reiciendis.
         </p>
-        <a href="Copie de CV-.pdf">Téléchargé mon cv !</a>
+        <a id="celebrateBtn" href="CV.pdf" download="CV.pdf"
+          >Téléchargé mon cv !</a
+        >
       </div>
-
     </header>
+
+    <!--Les aps-->
 
     <main>
       <section id="APs" class="BBox">
@@ -60,7 +65,7 @@
           </p>
         </div>
       </section>
-
+      <!--Veille-->
       <section id="Veille" class="veille">
         <div id="TextVeille">
           <h2>Veille</h2>
@@ -75,18 +80,38 @@
           <img src="baie.webp" alt="Image d'une baie informatique" />
         </div>
       </section>
-      <section class="formulaire">
+
+      <!--Formulaire-->
+
+      <section id="formulaire" class="formulaire">
         <div class="bloc">
-          <h1>Formulaire de contact</h1>
+          <h2>Formulaire de contact</h2>
           <form action="envoie_message.php" method="post">
             <div class="NomPrenom">
-              <input type="text" name="nom" placeholder="Nom" required />
-              <input type="text" name="prenom" placeholder="Prénom" required />
+              <input
+                type="text"
+                name="nom"
+                placeholder="Nom"
+                pattern="[a-z] ,{1,10}"
+                required
+              />
+              <input
+                type="text"
+                name="prenom"
+                placeholder="Prénom"
+                pattern="[a-z], {1,10}"
+                required
+              />
             </div>
-            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              pattern="{5,30}"
+              required
+            />
             <div>
               <textarea
-                id="b1"
                 class="email"
                 placeholder="Votre message ici"
                 cols="50"
@@ -100,8 +125,11 @@
             </div>
           </form>
         </div>
+
+        <!--Contact-->
+
         <div class="Tcontact">
-          <h1>Contact</h1>
+          <h2>Contact</h2>
           <div class="icon">
             <img src="téléchargé.png" alt="icon instagram" />
             <p>Mon instagram</p>
@@ -117,8 +145,11 @@
         </div>
       </section>
     </main>
+
+    <!--Footer-->
+
     <footer>
-      <p>copyright</p>
+      <p>copyright tous droits réservés</p>
     </footer>
 
     <script src="scripts.js"></script>
